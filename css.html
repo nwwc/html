@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 설명</title>
+    <style>
+        /* 링크 스타일 */
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        /* 제목 중앙 정렬 */
+        h1 {
+            font-size: 4vw;
+            margin-top: 20px;
+        }
+        /* 카테고리 스타일 */
+        .category {
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #ddd;
+        }
+        /* 카테고리 제목 스타일 */
+        .category p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* 본문 스타일 */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            text-align: center;
+        }
+        /* 목록 스타일 (아이콘과 텍스트 모두 중앙 정렬) */
+        ol li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        ol li::before {
+            content: '🔹';
+            margin-right: 10px;
+        }
+        /* 링크 hover 효과 */
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="category">
+        <h1><a href="index.html">WEB</a></h1>
+        <p>프론트엔드</p>
+        <ul>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html" style="color: red">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+        <p>백엔드</p>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Ruby</li>
+            <li>C#</li>
+        </ul>
+        <p>앱 코딩 배우기</p>
+        <ul>
+            <li>기초</li>
+            <li>하급</li>
+            <li>중급</li>
+            <li>상급</li>
+            <li>개발</li>
+        </ul>
+    </div>
+    <div class="content">
+        <p style="font-size: 2rem;">CSS란?</p>
+        <h2><strong>📖 CSS(Cascading Style Sheets)란?</strong></h2>
+        <p>CSS는 웹 페이지의 스타일과 레이아웃을 정의하는 스타일 시트 언어예요.</p>
+        <p>HTML이 웹 페이지의 뼈대를 만든다면, CSS는 그 뼈대에 색, 글꼴, 배치 등의 스타일을 입혀요.</p>
+        <h2><strong>🏗️ CSS의 역할</strong></h2>
+        <ol>
+            <li>색상과 배경 (color, background 속성)</li>
+            <li>글꼴과 텍스트 스타일 (font-family, font-size, line-height)</li>
+            <li>레이아웃 설정 (display, position, flex, grid)</li>
+            <li>애니메이션과 전환 효과 (animation, transition)</li>
+            <li>반응형 디자인 (media queries)</li>
+        </ol>
+        <h2><strong>🧠 주요 기능</strong></h2>
+        <ol>
+            <li>선택자(Selector)를 사용해 특정 HTML 요소에 스타일을 적용할 수 있어요.</li>
+            <li>상속(Inheritance)으로 부모 요소의 스타일이 자식 요소에 전달돼요.</li>
+            <li>우선순위(Specificity)를 통해 충돌 시 적용할 스타일을 결정해요.</li>
+            <li>미디어 쿼리(Media Queries)를 사용해 반응형 웹을 구현할 수 있어요.</li>
+        </ol>
+        <h2><strong>🚀 정리</strong></h2>
+        <p>CSS는 HTML에 스타일을 적용해 웹 페이지를 더 아름답고 사용하기 편하게 만들어줘요.</p>
+        <p>JavaScript를 추가하면 동적인 기능까지 구현할 수 있답니다!</p>
+    </div>
+</body>
+</html>

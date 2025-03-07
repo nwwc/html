@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩의 모든 것</title>
+    <style>
+        /* 링크 스타일 */
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        /* 제목 중앙 정렬 */
+        h1 {
+            font-size: 4vw;
+            margin-top: 20px;
+        }
+
+        /* 카테고리 스타일 */
+        .category {
+            background-color: #f9f9f9; /* 연한 회색 배경 */
+            padding: 20px;
+            width: 200px;
+            height: 100vh; /* 화면 전체 높이 */
+            position: fixed; /* 스크롤해도 고정 */
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+            border-right: 1px solid #ddd; /* 구분선 */
+        }
+        
+        /* 본문 스타일 */
+        .content {
+            margin-left: 220px; /* 카테고리 너비만큼 여백 */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 카테고리 제목 스타일 */
+        .category p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* 본문 제목 스타일 */
+        h2 {
+            font-size: 2rem;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* 목록 스타일 (아이콘과 텍스트 중앙 정렬) */
+        ol li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        ol li::before {
+            content: '🔹';
+            margin-right: 10px;
+        }
+        
+        /* 링크 hover 효과 */
+        a:hover {
+            color: #007bff; /* 파란색으로 변화 */
+        }
+
+        img {
+            width: 700px;
+            height: 300px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="category">
+        <h1><a href="index.html">WEB</a></h1>
+        <p>프론트엔드</p>
+            <ul>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+            </ul>
+        <p>백엔드</p>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Ruby</li>
+                <li>C#</li>
+            </ul>
+        <p>앱 코딩 배우기</p>
+            <ul>
+                <li>기초</li>
+                <li>하급</li>
+                <li>중급</li>
+                <li>상급</li>
+                <li>개발</li>
+            </ul>
+    </div>
+
+    <div class="content">
+        <p style="font-size: 4rem;">코딩의 모든 것</p>
+
+        <h2><strong>📖 코딩(Coding)의 정의</strong></h2>
+        <img src="정의.jpg" alt="코딩의 정의">
+        <p>코딩(Coding)은 컴퓨터가 이해할 수 있는 프로그래밍 언어를 사용하여 명령어를 작성하는 과정이에요.</p>
+        <p>쉽게 말해, 사람의 생각이나 논리를 컴퓨터가 수행할 수 있도록 코드(Code)로 표현하는 거죠.</p>
+
+        <h2><strong>🏗️ 코딩의 주요 목적</strong></h2>
+        <img src="목적.jpg" alt="코딩의 주요 목적">
+        <ol>
+            <li>문제 해결: 논리적으로 문제를 분석하고 해결 방법을 구현</li>
+            <li>자동화: 반복적인 작업을 자동으로 처리</li>
+            <li>창작 및 개발: 웹사이트, 애플리케이션, 게임 등 다양한 소프트웨어 제작</li>
+            <li>데이터 처리: 데이터를 분석하고 시각화</li>
+        </ol>
+
+        <h2><strong>🧠 웹 개발에서의 코딩</strong></h2>
+        <img src="웹개발에서의코딩.jpg" alt="웹 개발에서의 코딩">
+        <ol>
+            <li>HTML: 웹페이지의 구조를 만듦 (제목, 문단, 이미지 등)</li>
+            <li>CSS: 스타일을 적용 (색상, 크기, 레이아웃 등)</li>
+            <li>JavaScript: 웹페이지에 동적 기능을 추가 (이벤트 처리, 애니메이션 등)</li>
+        </ol>
+    </div>
+</body>
+</html>

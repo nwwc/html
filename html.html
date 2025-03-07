@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 설명</title>
+    <style>
+        /* 링크 스타일 */
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        /* 제목 중앙 정렬 */
+        h1 {
+            font-size: 4vw;
+            margin-top: 20px;
+        }
+        /* 카테고리 스타일 */
+        .category {
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #ddd;
+        }
+        /* 카테고리 제목 스타일 */
+        .category p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* 본문 스타일 */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            text-align: center;
+        }
+        /* 목록 스타일 (아이콘과 텍스트 모두 중앙 정렬) */
+        ol li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        ol li::before {
+            content: '🔹';
+            margin-right: 10px;
+        }
+        /* 링크 hover 효과 */
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="category">
+        <h1><a href="index.html">WEB</a></h1>
+        <p>프론트엔드</p>
+        <ul>
+            <li><a href="html.html" style="color: red">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+        <p>백엔드</p>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Ruby</li>
+            <li>C#</li>
+        </ul>
+        <p>앱 코딩 배우기</p>
+        <ul>
+            <li>기초</li>
+            <li>하급</li>
+            <li>중급</li>
+            <li>상급</li>
+            <li>개발</li>
+        </ul>
+    </div>
+    <div class="content">
+        <p style="font-size: 2rem;">HTML이란?</p>
+        <h2><strong>📖 HTML(HyperText Markup Language)이란?</strong></h2>
+        <p>HTML은 웹 페이지의 구조를 정의하는 마크업 언어예요.</p>
+        <h2><strong>🏗️ HTML의 역할</strong></h2>
+        <ol>
+            <li>제목과 본문 (h1, p 태그)</li>
+            <li>이미지 (img 태그)</li>
+            <li>링크 (a 태그)</li>
+            <li>목록 (ul, ol, li 태그)</li>
+            <li>표 (table 태그)</li>
+            <li>입력 폼 (form, input, button 태그)</li>
+        </ol>
+        <h2><strong>🧱 HTML의 주요 특징</strong></h2>
+        <ol>
+            <li>구조화된 문서 생성</li>
+            <li>링크 기능 제공</li>
+            <li>미디어 통합 가능</li>
+            <li>폼과 입력 요소 제공</li>
+        </ol>
+        <h2><strong>🚀 정리</strong></h2>
+        <p>HTML은 웹 페이지의 뼈대를 만들어주는 언어예요.</p>
+        <p>CSS와 JavaScript를 통해 더 아름답고 기능적인 웹을 만들 수 있어요!</p>
+    </div>
+</body>
+</html>

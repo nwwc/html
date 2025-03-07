@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 설명</title>
+    <style>
+        /* 링크 스타일 */
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        /* 제목 중앙 정렬 */
+        h1 {
+            font-size: 4vw;
+            margin-top: 20px;
+        }
+        /* 카테고리 스타일 */
+        .category {
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #ddd;
+        }
+        /* 카테고리 제목 스타일 */
+        .category p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* 본문 스타일 */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            text-align: center;
+        }
+        /* 목록 스타일 (아이콘과 텍스트 모두 중앙 정렬) */
+        ol li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        ol li::before {
+            content: '🔹';
+            margin-right: 10px;
+        }
+        /* 링크 hover 효과 */
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 좌측 고정 카테고리 -->
+    <div class="category">
+        <h1><a href="index.html">WEB</a></h1>
+        <p>프론트엔드</p>
+        <ul>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html" style="color: red">JavaScript</a></li>
+        </ul>
+        <p>백엔드</p>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Ruby</li>
+            <li>C#</li>
+        </ul>
+        <p>앱 코딩 배우기</p>
+        <ul>
+            <li>기초</li>
+            <li>하급</li>
+            <li>중급</li>
+            <li>상급</li>
+            <li>개발</li>
+        </ul>
+    </div>
+    <div class="content">
+        <p style="font-size: 2rem;">JavaScript란?</p>
+        <h2><strong>📖 JavaScript란?</strong></h2>
+        <p>JavaScript는 웹 페이지에 동적인 기능을 추가할 수 있는 프로그래밍 언어입니다.</p>
+        <h2><strong>🏗️ JavaScript의 역할</strong></h2>
+        <ol>
+            <li>사용자 입력에 따라 페이지 내용 변경</li>
+            <li>애니메이션 효과 추가</li>
+            <li>폼 검증 기능 제공</li>
+            <li>서버와 데이터 통신 (AJAX)</li>
+            <li>웹 애플리케이션 개발 가능</li>
+        </ol>
+        <h2><strong>🧠 주요 기능</strong></h2>
+        <ol>
+            <li>변수와 데이터 타입</li>
+            <li>조건문과 반복문</li>
+            <li>함수와 이벤트 처리</li>
+            <li>DOM(Document Object Model) 조작</li>
+            <li>비동기 처리 (Promise, async/await)</li>
+        </ol>
+        <h2><strong>🚀 정리</strong></h2>
+        <p>JavaScript는 HTML, CSS와 함께 웹 개발의 3대 요소 중 하나입니다.</p>
+        <p>동적인 웹 페이지와 다양한 기능을 구현할 수 있는 강력한 도구입니다.</p>
+    </div>
+</body>
+</html>
